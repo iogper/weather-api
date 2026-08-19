@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, hwb(240 11% 1%) 0%, hsl(240deg 95% 98%) 100%, hsl(240deg 96% 79%) 84%, hsl(240deg 97% 70%) 59%);
+    background-size: 400% 400%;
+    animation: gradientShift 12s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#temp {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+
+#app {
+    position: relative;
+    width: 414px;
+    height: 420px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 40px 0px;
+    overflow: hidden;
+    border-radius: 45px;
+    background-image: linear-gradient(325deg,
+            hwb(240 11% 1%) 0%,
+            hsl(240deg 97% 65%) 32%,
+            hsl(240deg 97% 70%) 59%,
+            hsl(240deg 96% 75%) 74%,
+            hsl(240deg 96% 79%) 84%,
+            hsl(240deg 96% 82%) 90%,
+            hsl(240deg 96% 85%) 94%,
+            hsl(240deg 96% 88%) 97%,
+            hsl(240deg 96% 91%) 99%,
+            hsl(240deg 96% 93%) 100%,
+            hsl(240deg 96% 96%) 100%,
+            hsl(240deg 95% 98%) 100%,
+            hsl(0deg 0% 100%) 100%);
+}
+
+#searchBar {
+    display: flex;
+    padding: 0 40px;
+    margin-bottom: 30px;
+}
+
+#searchBarInput {
+    background-color: none;
+    border: none;
+    outline: none;
+    width: 90%;
+    background: transparent;
+    color: #fff;
+    border-bottom: solid 1px lightblue;
+}
+
+input::placeholder {
+    color: #fff;
+    opacity: 0.6;
+}
+
+#info {
+    line-height: 3rem;
+    color: #fff;
+}
+
+
+#info h3 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0.6rem;
+
+
+}
+
+#description {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+#searchIcon {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#extraInfo {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    padding-bottom: 30px;
+
+}
+
+#extraInfo h5 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
