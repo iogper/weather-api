@@ -1,4 +1,6 @@
-// aba54e7b9d1c92fe3acbd7efbd490383
+// API key : aba54e7b9d1c92fe3acbd7efbd490383
+// Get your API Key from OpenWeather 
+
 
 const date = document.getElementById('date');
 const city = document.getElementById('city');
