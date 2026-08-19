@@ -1,5 +1,5 @@
-// API key : aba54e7b9d1c92fe3acbd7efbd490383
-// Get your API Key from OpenWeather 
+// API key : YOUR_API_KEY 
+// Get your API Key from https://openweathermap.org/api
 
 
 const date = document.getElementById('date');
